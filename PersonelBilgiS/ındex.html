@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel Bilgi Sistemi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card {
+            border: 2px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Personel Bilgi Sistemi</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 mb-5 mr-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Patricia Lebsack</h5>
+          <p class="card-text">Genel Müdür</p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#employeeModal" id="btn1">Detaylar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 mb-5 mr-5"> 
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Ervin Howell</h5>
+          <p class="card-text">Asistan</p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#employeeModal" id="btn2">Detaylar</a>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 mb-5 mr-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Clementine Bauch</h5>
+          <p class="card-text">Asistan</p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#employeeModal" id="btn3">Detaylar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 mb-5 mr-5"> <!-- İkinci kutu için -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Chelsey Dietrich</h5>
+          <p class="card-text">Müdür Yardımcısı</p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#employeeModal" id="btn4">Detaylar</a>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="employeeModal" tabindex="-1" role="dialog" aria-labelledby="employeeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="employeeModalLabel">Çalışan Detayları</h5>
+        <button type="button"  class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="employeeDetails">
+    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
